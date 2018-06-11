@@ -57,7 +57,7 @@ notexists
 html不存在元素，則符合條件，並彈出message  
   
 morethan  
-html中元素大於compareTo的數字，，則符合條件，並彈出message  
+html中元素大於compareTo的數字，則符合條件，並彈出message  
   
 如何新增Profile(已有規則)  
 --  
