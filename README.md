@@ -25,10 +25,9 @@ npm install
 介接/使用方式  
 --  
 1.先去lib/config.js 設定input/output file path  
-使用npm安裝路徑會在node_modules\@goateeya\html-scanner\lib下  
+使用npm安裝路徑會在node_modules\\@goateeya\html-scanner\lib下  
   
-2.  
-Github: var scanner = require('scanner');  
+2.Github: var scanner = require('scanner');  
   
 or  
   
