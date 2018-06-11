@@ -16,7 +16,7 @@ config.rule.morethan = {};
 
 // file config
 config.isloadFromFile = true;
-config.htmlFilePath = './input/testcase.4.html';    // input file path
+config.htmlFilePath = 'F:/git/repo/htmlscanner/input/testcase.4.html';    // input file path
 config.fileEncoding = 'utf8';   // input & output file encoding
 config.outputFileFolder = './output/';  // output folder
 

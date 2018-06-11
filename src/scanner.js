@@ -63,7 +63,7 @@ scanner.ruleValidate = (document) => {
             } else if (rule == 'morethan') {
                 config.rule.morethan.profiles.filter(scanner.isProfileEnable).map((profile) => {
                     var elementSize = document.querySelectorAll(profile.selector).length;
-                    if (elementSize >= profile.compareTo) result = scanner.logAndAppendToOutput(result, util.format(profile.message, elementSize));
+                    if (elementSize > profile.compareTo) result = scanner.logAndAppendToOutput(result, util.format(profile.message, elementSize));
                 });
             } else {
                 console.warn('Rule %s needs to be implement', rule);
