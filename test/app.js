@@ -1,5 +1,5 @@
 var fs = require('fs');
-var scanner = require('./scanner');
+var scanner = require('../src/scanner');
 
 // 1.load file which path set in config.js
 scanner.run();
