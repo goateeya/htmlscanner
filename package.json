@@ -1,8 +1,8 @@
 {
-  "name": "shopback_assignment",
+  "name": "html-scanner",
   "version": "1.0.0",
-  "description": "shopback assignment",
-  "main": "./src/app.js",
+  "description": "html file rule checking by config",
+  "main": "./src/scanner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/goateeya/htmlscanner.git"
   },
-  "author": "Gordan Kao",
+  "author": "Gordan Kao <goateeya@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goateeya/htmlscanner/issues"
   },
   "homepage": "https://github.com/goateeya/htmlscanner#readme",
   "dependencies": {
-    "htmlparser2": "^3.9.2",
     "jsdom": "^11.11.0"
   }
 }
