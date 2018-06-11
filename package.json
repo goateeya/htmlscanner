@@ -1,0 +1,23 @@
+{
+  "name": "shopback_assignment",
+  "version": "1.0.0",
+  "description": "shopback assignment",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goateeya/htmlscanner.git"
+  },
+  "author": "Gordan Kao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goateeya/htmlscanner/issues"
+  },
+  "homepage": "https://github.com/goateeya/htmlscanner#readme",
+  "dependencies": {
+    "htmlparser2": "^3.9.2",
+    "jsdom": "^11.11.0"
+  }
+}
