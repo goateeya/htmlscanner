@@ -108,5 +108,5 @@ scanner.initFolder = () => {
 module.exports = scanner;
 
 if (require.main === module) {
-    console.log('try to import this module and scanner.run()!');
+    scanner.run();
 }
