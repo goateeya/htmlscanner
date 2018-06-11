@@ -1,8 +1,8 @@
 {
   "name": "@goateeya/html-scanner",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "html file rule checking by config",
-  "main": "./src/scanner.js",
+  "main": "./lib/scanner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,30 +2,51 @@
 convert html file to dom object, then using document.querySelectorAll to find element  
   
 dependencies  
---
-jsdom 11.11.0
-
+--  
+jsdom 11.11.0  
+  
 安裝方式  
---
+--  
+從Github  
 1.git clone https://github.com/goateeya/htmlscanner.git  
 2.cd htmlscanner/  
 3.npm install  
 4.node test/app.js  
   
+從npm  
+npm i @goateeya/html-scanner  
+  
+or  
+  
+package.json中dependencies加入  
+"@goateeya/html-scanner": "^1.0.3"  
+npm install  
+  
 介接/使用方式  
 --  
-1. var scanner = require('scanner');  
+1.先去lib/config.js 設定input/output file path  
+使用npm安裝路徑會在node_modules\@goateeya\html-scanner\lib下  
+  
+2.  
+Github: var scanner = require('scanner');  
+  
+or  
+  
+npm: var scanner = require('@goateeya/html-scanner');  
+  
+3.var readerStream = fs.createReadStream('xxxxx.html');  
+scanner.run(readerStream);  
+  
+or  
+  
 scanner.run();  
   
-2. var scanner = require('scanner');  
-var readerStream = fs.createReadStream('xxxxx.html');  
-scanner.run(readerStream);  
 執行後會產出檔案於./output/xxxxx.html_check_result.txt (預設產出路徑為./output/)  
   
 Configure  
 --
-First open src/config.js  
-
+First open lib/config.js  
+  
 config.isloadFromFile = true;  
 是否讀取檔案，但如果run function傳入readerStream，會優先使用傳入的readerStream  
   
