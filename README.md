@@ -1,5 +1,9 @@
-# htmlscanner
-a scanner for checking html
+# htmlscanner  
+convert html file to dom object, then using document.querySelectorAll to find element  
+  
+dependencies  
+--
+jsdom 11.11.0
 
 安裝方式  
 --
