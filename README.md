@@ -13,32 +13,43 @@ jsdom 11.11.0
 3.npm install  
 4.node test/app.js  
   
-從npm  
-npm i @goateeya/html-scanner  
+從npm
+
+     npm i @goateeya/html-scanner  
   
 or  
   
 package.json中dependencies加入  
-"@goateeya/html-scanner": "^1.0.3"  
-npm install  
+
+    "@goateeya/html-scanner": "^1.0.3"  
+    
+接著下npm安裝指令
+    
+    npm install  
   
 介接/使用方式  
 --  
 1.先去lib/config.js 設定input/output file path  
 使用npm安裝路徑會在node_modules\\@goateeya\html-scanner\lib下  
   
-2.Github: var scanner = require('scanner');  
+2.Github: 
+
+     var scanner = require('scanner'); 
   
 or  
   
-npm: var scanner = require('@goateeya/html-scanner');  
+npm: 
   
-3.var readerStream = fs.createReadStream('xxxxx.html');  
-scanner.run(readerStream);  
+     var scanner = require('@goateeya/html-scanner'); 
+  
+3.
+  
+     var readerStream = fs.createReadStream('xxxxx.html'); 
+     scanner.run(readerStream); 
   
 or  
   
-scanner.run();  
+     scanner.run(); 
   
 執行後會產出檔案於./output/xxxxx.html_check_result.txt (預設產出路徑為./output/)  
   
@@ -85,9 +96,10 @@ html中元素大於compareTo的數字，則符合條件，並彈出message
   
 EXAMPLE:\<meta name=“robots” /\> existing or not  
 於config.rule.exists.profiles加入一組物件  
-{'selector': 'meta[name="robots"]',  
-'enable': true,  
-'message' 'There are %i <meta> tag with name = "robots" attribute'}  
+  
+    {'selector': 'meta[name="robots"]',  
+    'enable': true,  
+    'message' 'There are %i <meta> tag with name = "robots" attribute'}  
   
 如何新增rule(尚未有規則)  
 --
