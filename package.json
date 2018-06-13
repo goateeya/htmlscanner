@@ -1,6 +1,6 @@
 {
   "name": "@goateeya/html-scanner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "html file rule checking by config",
   "main": "./lib/newscanner.js",
   "scripts": {

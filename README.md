@@ -1,6 +1,10 @@
 # htmlscanner  
 convert html file to dom object, then using document.querySelectorAll to find element  
   
+Change log  
+--  
+2018/06/13 Gordan 使用javascript ES6 class的寫法重寫scanner.js(改使用newscanenr.js)  
+  
 dependencies  
 --  
 jsdom 11.11.0  
@@ -21,7 +25,7 @@ or
   
 package.json中dependencies加入  
 
-    "@goateeya/html-scanner": "^1.0.3"  
+    "@goateeya/html-scanner": "^1.0.4"  
     
 接著下npm安裝指令
     
@@ -34,22 +38,24 @@ package.json中dependencies加入
   
 2.Github: 
 
-     var scanner = require('scanner'); 
+	var Scanner = require('scanner');
   
 or  
   
 npm: 
   
-     var scanner = require('@goateeya/html-scanner'); 
+	var Scanner = require('@goateeya/html-scanner');
   
 3.
   
-     var readerStream = fs.createReadStream('xxxxx.html'); 
-     scanner.run(readerStream); 
+	var readerStream = fs.createReadStream('xxxxx.html');
+	var scanner = Scanner(readerStream);
+	scanner.run();
   
 or  
   
-     scanner.run(); 
+	var scanner = Scanner();
+	scanner.run();
   
 執行後會產出檔案於./output/xxxxx.html_check_result.txt (預設產出路徑為./output/)  
   
