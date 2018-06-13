@@ -2,7 +2,7 @@
   "name": "@goateeya/html-scanner",
   "version": "1.0.3",
   "description": "html file rule checking by config",
-  "main": "./lib/scanner.js",
+  "main": "./lib/newscanner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/goateeya/htmlscanner#readme",
   "dependencies": {
     "jsdom": "^11.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.1"
   }
 }
